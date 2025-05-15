@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register - PLAYRENT ARENA</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .btn-primary {
+      padding: 0.5rem 1rem;
+      background-color: #b66e24;
+      color: white;
+      border-radius: 0.5rem;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .btn-primary:hover {
+      background-color: #ea580c;
+    }
+  </style>
+</head>
+
+<body class="flex items-center justify-center min-h-screen px-4">
+
+  <div class="bg-[#111] p-8 rounded-xl shadow-lg w-full max-w-md">
+    <h1 class="text-3xl font-bold text-[#3dd9b4] mb-6 text-center">Daftar Akun</h1>
+    <form>
+      <div class="mb-4">
+        <label for="name" class="block text-sm font-medium mb-1">Nama Lengkap</label>
+        <input type="text" id="name" class="w-full p-2 rounded bg-[#222] text-white focus:outline-none" required />
+      </div>
+      <div class="mb-4">
+        <label for="email" class="block text-sm font-medium mb-1">Email</label>
+        <input type="email" id="email" class="w-full p-2 rounded bg-[#222] text-white focus:outline-none" required />
+      </div>
+      <div class="mb-4">
+        <label for="password" class="block text-sm font-medium mb-1">Password</label>
+        <input type="password" id="password" class="w-full p-2 rounded bg-[#222] text-white focus:outline-none"
+          required />
+      </div>
+      <div class="mb-6">
+        <label for="confirm-password" class="block text-sm font-medium mb-1">Konfirmasi Password</label>
+        <input type="password" id="confirm-password" class="w-full p-2 rounded bg-[#222] text-white focus:outline-none"
+          required />
+      </div>
+      <button type="submit" class="btn-primary w-full text-center">Daftar</button>
+    </form>
+    <p class="mt-4 text-sm text-center">
+      Sudah punya akun?
+      <a href="login.html" class="text-[#3dd9b4] hover:underline">Login di sini</a>
+    </p>
+  </div>
+
+</body>
+
+</html>

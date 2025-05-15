@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>PLAYRENT ARENA - Playstation & EH-CAFE</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+    html {
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+    }
+
+    ::-webkit-scrollbar {
+      width: 0;
+      height: 0;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #3dd9b4;
+      margin-bottom: 1rem;
+    }
+
+    .btn-primary {
+  padding: 0.5rem 1rem;
+  background-color: #b66e24;
+  color: white;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+  background-color: #ea580c; /* tailwind's orange-600 */
+}
+  </style>
+</head>
+
+<body>
+
+  <header class="w-full bg-black border-b border-[#1a1a1a] sticky top-0 z-50">
+    <nav class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+      <div class="text-[#b66e24] font-orbitron text-lg font-bold tracking-wide">
+        PLAYRENT ARENA
+      </div>
+      <ul class="flex space-x-6 font-bold text-white text-sm tracking-wide uppercase">
+        <li><a href="#fasilitas" class="hover:text-orange-400">Fasilitas</a></li>
+        <li><a href="#cek" class="hover:text-orange-400">Cek Ketersediaan</a></li>
+        <li><a href="#games" class="hover:text-orange-400">Games</a></li>
+        <li><a href="#kontak" class="hover:text-orange-400">Kontak</a></li>
+        <li><a href="login.html" class="hover:text-orange-400">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="flex flex-col items-center justify-center min-h-[calc(100vh-72px)] px-6 text-center">
+    <div class="flex flex-col md:flex-row items-center md:space-x-10 max-w-7xl w-full animate-fadeIn">
+      <img src="aset/playrent.jpeg" alt="Logo" class="w-48 md:w-72 rounded-xl shadow-lg" />
+      <div class="mt-8 md:mt-0 text-center md:text-left">
+        <h1 class="text-[32px] md:text-[40px] font-orbitron text-[#fff0f0] tracking-wide">PLAYRENT ARENA</h1>
+        <hr class="border-t border-[#fff0f0] w-full mt-1 mb-3" />
+        <h2 class="text-[28px] md:text-[36px] font-orbitron text-[#b66e24] tracking-widest">PLAYSTATION & EH-CAFE</h2>
+      </div>
+    </div>
+    <a href="#fasilitas"
+      class="mt-16 border border-white rounded-full w-12 h-12 flex items-center justify-center text-white hover:text-[#b66e24] transition-colors duration-300 animate-bounce">
+      <i class="fas fa-angle-double-down fa-lg"></i>
+    </a>
+  </main>
+
+  <section id="fasilitas" class="max-w-7xl mx-auto px-6 py-20 text-center">
+    <h2 class="section-title">Fasilitas</h2>
+    <div class="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-y-16 gap-x-6">
+      <div class="flex flex-col items-center space-y-4">
+        <i class="fas fa-money-bill fa-3x text-white"></i>
+        <p class="text-[#3dd9b4] font-bold text-lg text-center">HARGA MULAI DARI <br /> IDR 8.000</p>
+      </div>
+      <div class="flex flex-col items-center space-y-4">
+        <i class="fas fa-gamepad fa-3x text-white"></i>
+        <p class="text-[#3dd9b4] font-bold text-lg text-center">GAME PS 4 TERBARU</p>
+      </div>
+      <div class="flex flex-col items-center space-y-4">
+        <img src="https://storage.googleapis.com/a1aa/image/cb141a5d-153b-4a33-4186-d315ef760c8e.jpg" alt="PS logo"
+          class="w-16 h-16" />
+        <p class="text-[#3dd9b4] font-bold text-lg text-center">TERDAPAT 9 <br /> CONSOLE PS 4</p>
+      </div>
+      <div class="flex flex-col items-center space-y-4">
+        <i class="fas fa-tv fa-3x text-white"></i>
+        <p class="text-[#3dd9b4] font-bold text-lg text-center">TV 32 ~ 50 INCH</p>
+      </div>
+      <div class="flex flex-col items-center space-y-2">
+        <i class="fas fa-wifi fa-3x text-white"></i>
+        <p class="text-[#3dd9b4] font-bold text-lg text-center">FREE WIFI</p>
+        <p class="text-[#3dd9b4] text-sm">Pass: bayarosek</p>
+      </div>
+      <div class="flex flex-col items-center space-y-4">
+        <img src="https://storage.googleapis.com/a1aa/image/68909971-0c30-4df2-209b-dc4b3e2ae226.jpg" alt="AC"
+          class="w-16 h-16 rounded-full" />
+        <p class="text-[#3dd9b4] font-bold text-lg text-center">FULL AC</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="cek" class="py-20 px-6 bg-gray-900 text-center">
+    <h2 class="section-title">Cek Ketersediaan</h2>
+    <p class="text-gray-300 max-w-2xl mx-auto">Login dulu yaa buat melihat data ketersediaan game & console secara
+      real-time. Sistem booking bakal aktif kalau udah login.</p>
+    <a href="login.html" class="mt-6 inline-block btn-primary">Login Sekarang</a>
+  </section>
+
+  <section id="games" class="py-20 px-6 bg-gray-800 text-center">
+    <h2 class="section-title">Daftar Game & Console</h2>
+    <p class="text-gray-300 max-w-2xl mx-auto mb-6">Intinya banyak game PS4/PS5 terpopuler kaya FIFA,
+      Call of Duty, GTA V, dll. Males ngetik.</p>
+    <img src="aset/games.jpg" alt="Ini Games Anjay" class="mx-auto w-64 rounded-xl shadow-lg" />
+  </section>
+
+  <section id="kontak" class="py-20 px-6 bg-gray-900 text-center">
+    <h2 class="section-title">Kontak</h2>
+    <p class="text-gray-300 max-w-xl mx-auto mb-4">Alamat: Jl. Jalan di Unesa, Surabaya, Indonesia</p>
+    <p class="text-gray-300 mb-2">Telepon: +62 812-3456-7890</p>
+    <p class="text-gray-300">Email: info@playrentarena.com</p>
+  </section>
+
+</body>
+
+</html>
